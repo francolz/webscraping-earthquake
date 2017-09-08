@@ -172,7 +172,7 @@ for i in locat_list:
 latmap = round(locate[0],2)
 lonmap = round(locate[1],2)
 
-mapbox_access_token = 'pk.eyJ1IjoiZnJhbmNvbHoiLCJhIjoiY2o3ODNtOXAyMWZtdDMzandkaWUxaG85bSJ9.davEXRkTgcGHk24iL34zYw'
+mapbox_access_token = 'YOUR_TOKEN_HERE'
 
 datamap = Data([
     Scattermapbox(
