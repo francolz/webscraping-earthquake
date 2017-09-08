@@ -74,7 +74,7 @@ while True:
         if radius_to_search.isdigit():
             break
         else:
-            raise ValueError#print ('Looks like you haven\'t entered a number. Please try again! ')
+            raise ValueError
     except:
         print ('Ops something went wrong! Try again')
 
@@ -208,24 +208,7 @@ layout = Layout(
     ),
 )
 
-fig3 = dict(data=datamap, layout=layout)
-py.iplot(fig3, filename='Montreal Mapbox')
+fig = dict(data=datamap, layout=layout)
+py.iplot(fig, filename='Map')
 
-'''
-#opening web page with plot                                                                                                                                                    
-url = 'https://plot.ly/~francolz/0'
-# MacOS                                                                                                                                                                       
-chrome_path = 'open -a /Applications/Google\ Chrome.app %s'
-webbrowser.get(chrome_path).open(url)
-'''
 
-'''
-fig2, ax2 = plt.subplots()
-ax2.plot_date(df['day'], df['magnitude'], '-')
-ax2.xaxis.set_major_locator(mdates.WeekdayLocator())
-ax2.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
-ax2.autoscale_view()
-ax2.grid(True)
-fig2.autofmt_xdate()
-fig2.savefig("sca.png")
-'''
