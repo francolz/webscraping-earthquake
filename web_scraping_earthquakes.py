@@ -14,8 +14,6 @@ import plotly.plotly as py
 from plotly.graph_objs import *
 import webbrowser
 from datetime import datetime
-# Import smtplib (to allow us to email)
-import smtplib
 from time import sleep
 import sys
 # define a bunch of useful functions##
@@ -172,7 +170,7 @@ for i in locat_list:
 latmap = round(locate[0],2)
 lonmap = round(locate[1],2)
 
-mapbox_access_token = 'YOUR_TOKEN_HERE'
+mapbox_access_token = 'YOUR_TOKEN_HERE' #use your mapbox_access_token here
 
 datamap = Data([
     Scattermapbox(
@@ -211,7 +209,8 @@ py.iplot(fig, filename='Map')
 
 #opening web page with plot                                                                                                                                                   \
                                                                                                                                                                                
-url = 'https://plot.ly/~francolz/0'                                                                                                                                            
+#url = 'https://plot.ly/~francolz/0'                                                                                                                                            
+url = 'your_url'
 # MacOS                                                                                                                                                                       
 chrome_path = 'open -a /Applications/Google\ Chrome.app %s'                                                                                                                    
 webbrowser.get(chrome_path).open(url)  
