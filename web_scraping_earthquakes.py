@@ -66,11 +66,11 @@ while True:
             raise ValueError
         break
     except:
-        print ('Ops! It looks like the place you have types it\'s not in the database or you may have typed it incorrectly. Please type it again')
+        print ('Ops! It looks like the place you have typed it\'s not in the database or you may have typed it incorrectly. Please type it again')
 
 while True:
     try:
-        radius_to_search = input("In what range of "  + town + " you want to search for earthquakes? (in km) ")
+        radius_to_search = input("In what range of "  + town + " you want to search for earthquakes? (radius in km) ")
         if radius_to_search.isdigit():
             break
         else:
@@ -90,7 +90,7 @@ while True:
             raise ValueError
         break
     except:
-        print ('Ops')
+        print ('Ops! It looks like you are starting from the past! Try again!')
 
 for i in range(24):      # Number of pages plus one 
     url = "http://info.terremoti.ingv.it/events?starttime=2016-09-07+00%3A00%3A00&endtime=2017-09-07+23%3A59%3A59&last_nd=90&minmag=2&maxmag=10&mindepth=-10&maxdepth=1000&minlat=-90&maxlat=90&minlon=-180&maxlon=180&minversion=100&limit=30&orderby=ot-desc&tdmt_flag=-1&lat=0&lon=0&maxradiuskm=-1&wheretype=area&box_search=Mondo&timezone=UTC&page={}".format(i) #90 days
