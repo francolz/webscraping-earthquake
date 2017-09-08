@@ -9,7 +9,7 @@ from mpl_toolkits.basemap import Basemap
 import datetime as dt
 import matplotlib.dates as mdates
 import plotly
-plotly.tools.set_credentials_file(username='francolz', api_key='6Te3MPLXcDpdm0ix0Qfm')
+plotly.tools.set_credentials_file(username='YOURUSERNAME', api_key='YOURAPIKEY') #you need to create a free account on plotly
 import plotly.plotly as py
 from plotly.graph_objs import *
 import webbrowser
@@ -47,8 +47,6 @@ def calculate_distance (lat_df,lat,lon_df, lon):
 def calculate_area (rad):
     return rad*rad*pi 
 
-
-df = 0
 data = {
     'magnitude' : [],
     'time' : [],
@@ -210,5 +208,12 @@ layout = Layout(
 
 fig = dict(data=datamap, layout=layout)
 py.iplot(fig, filename='Map')
+
+#opening web page with plot                                                                                                                                                   \
+                                                                                                                                                                               
+url = 'https://plot.ly/~francolz/0'                                                                                                                                            
+# MacOS                                                                                                                                                                       
+chrome_path = 'open -a /Applications/Google\ Chrome.app %s'                                                                                                                    
+webbrowser.get(chrome_path).open(url)  
 
 
