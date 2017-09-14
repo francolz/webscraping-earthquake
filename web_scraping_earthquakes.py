@@ -16,7 +16,7 @@ import webbrowser
 from datetime import datetime
 from time import sleep
 import sys
-# define a bunch of useful functions##
+
 
 #print info about earthquake
 def printinfo (magnitude,time,day,location,depth):
