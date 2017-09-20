@@ -1,17 +1,20 @@
+import functions as fc
 import requests #make a get request to a web server
 from bs4 import BeautifulSoup #parse the page
 from geopy.geocoders import Nominatim #get coordinates of locations
 from math import sin, cos, sqrt, atan2, radians, pi # math stuff
 import pandas as pd
 import datetime as dt
-import plotly
-plotly.tools.set_credentials_file(username='YOURUSERNAME', api_key='YOURAPIKEY') #you need to create a free account on plotly    
-import plotly.plotly as py
-from plotly.graph_objs import *
 from datetime import datetime
 from time import sleep
 import sys
-import functions as fc
+# plotly config
+username = fc.read_key("keys.txt")[0]
+key = fc.read_key("keys.txt")[1]
+import plotly
+plotly.tools.set_credentials_file(username=username, api_key=key) #you need to create a free account on plotly                                                                     
+import plotly.plotly as py
+from plotly.graph_objs import *
 
 data = {
     'magnitude' : [],
@@ -138,7 +141,8 @@ for i in locat_list:
 latmap = round(locate[0],2)
 lonmap = round(locate[1],2)
 
-mapbox_access_token = 'YOUR_TOKEN_HERE' #use your mapbox_access_token here  
+mapbox_key = fc.read_key("keys.txt")[2][:-1].strip()
+mapbox_access_token = mapbox_key #use your mapbox_access_token here 
 
 datamap = Data([
     Scattermapbox(
