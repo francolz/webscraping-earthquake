@@ -4,7 +4,7 @@ In particular, the tool asks the user to input a location, a time range and the 
 
 Map plot caveat:
 You need to have a free plotly account and use you credentials here 
-plotly.tools.set_credentials_file(username='YOUR_USER_NAME', api_key='YUOR_API_KEY') when importing plotly and your mapbox access token to generate the plot.
+plotly.tools.set_credentials_file(username='YOUR_USER_NAME', api_key='YOUR_API_KEY') when importing plotly and your mapbox access token to generate the plot.
 
 You can sign up to plotly here https://plot.ly/feed/ and here https://www.mapbox.com/signin/ to mapbox.
 
@@ -16,3 +16,7 @@ You can sign up to plotly here https://plot.ly/feed/ and here https://www.mapbox
 ## Install the requirements ##
 * Install the requirements using `pip3 install -r requirements.txt`
   * Make sure you are using Python 3
+  
+# Usage #
+* Get your api key from https://plot.ly/python/getting-started/#installation  and your mapbox access token from https://www.mapbox.com/help/how-access-tokens-work/
+
