@@ -10,6 +10,6 @@ You can sign up to plotly here https://plot.ly/feed/ and here https://www.mapbox
 
 ## Installation ##
 * Clone this repository to your machine
-* cd into the webscraping-earthquake folder using cd webscraping-earthquake
+* cd into the webscraping-earthquake folder using `cd webscraping-earthquake`
 
 
