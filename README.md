@@ -8,7 +8,8 @@ plotly.tools.set_credentials_file(username='YOUR_USER_NAME', api_key='YUOR_API_K
 
 You can sign up to plotly here https://plot.ly/feed/ and here https://www.mapbox.com/signin/ to mapbox.
 
-## Installation ##
+# Installation #
+## Download the code
 * Clone this repository to your machine
 * cd into the webscraping-earthquake folder using `cd webscraping-earthquake`
 
