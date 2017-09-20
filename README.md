@@ -8,7 +8,7 @@ plotly.tools.set_credentials_file(username='YOUR_USER_NAME', api_key='YUOR_API_K
 
 You can sign up to plotly here https://plot.ly/feed/ and here https://www.mapbox.com/signin/ to mapbox.
 
-Markup :  ## Installation ##
+## Installation ##
 Installation
 
 
