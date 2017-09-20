@@ -29,3 +29,15 @@ def calculate_distance (lat_df,lat,lon_df, lon):
 
 def calculate_area (rad):
   	return rad*rad*pi
+
+def read_key(f):
+    a = []
+    with open(f,'r') as file:
+        for line in file:
+            for word in line.split(","):
+                a.append(word)
+            username = a[0]
+            api_key = a[1]
+            mapbox_token = a[2]
+    return a
+        
