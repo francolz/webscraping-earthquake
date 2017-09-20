@@ -21,5 +21,5 @@ You can sign up to plotly here https://plot.ly/feed/ and here https://www.mapbox
 * Get your api key from https://plot.ly/python/getting-started/#installation  and your mapbox access token from https://www.mapbox.com/help/how-access-tokens-work/
 * Open this file `~/.plotly/.credentials` with your favourite text editor check that your plotly api key and username are correct in this file (Note: you need you update your key manually in that file if you generate a new key)
 * Open the file `key.txt` with a text editor and substitute each entries with your plotly username, plotly apy key and mapbox token in this order. Make sure to use just a comma to separete them, no other spaces.
-* Run webscraping-earthquake.py as `python3 webscraping-earthquake.py`
+* Run web_scraping_earthquakes.py as `python3 web_scraping_earthquakes.py`
 
