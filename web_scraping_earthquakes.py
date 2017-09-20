@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup #parse the page
 from geopy.geocoders import Nominatim #get coordinates of locations
 from math import sin, cos, sqrt, atan2, radians, pi # math stuff
 import pandas as pd
-#from mpl_toolkits.basemap import Basemap
 import datetime as dt
 import plotly
 plotly.tools.set_credentials_file(username='YOURUSERNAME', api_key='YOURAPIKEY') #you need to create a free account on plotly    
