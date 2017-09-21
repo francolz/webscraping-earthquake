@@ -14,7 +14,7 @@ You can sign up to plotly here https://plot.ly/feed/ and here https://www.mapbox
 * cd into the webscraping-earthquake folder using `cd webscraping-earthquake`
 
 ## Install the requirements ##
-* Install the requirements using `pip3 install -r requirements.txt`
+* Install the requirements using `sudo pip3 install -r requirements.txt`
   * Make sure you are using Python 3
   
 # Usage #
